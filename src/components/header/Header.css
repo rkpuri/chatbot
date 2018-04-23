@@ -1,0 +1,21 @@
+.header {
+	background-color: #93ACD9;
+  	height: 52px;
+  	padding: 10px;
+  	color: white;
+}
+
+.header .block-1 {
+	display: inline-block;
+	width: 50%;	
+}
+
+.header .block-2 {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
+
+.header .welcome-label {
+	display: inline-block;
+}
