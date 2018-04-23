@@ -6,10 +6,7 @@ class Menu extends Component {
 	render() {
 		return(
 			<div>
-				<Button className="btn btn-primary btn-circle btn-xl" >Add Payee</Button>
-				<Button className="btn btn-primary btn-circle btn-xl" >Add Payee</Button>
-				<Button className="btn btn-primary btn-circle btn-xl" >Add Payee</Button>
-				<Button className="btn btn-primary btn-circle btn-xl" >Add Payee</Button>	
+				
 			</div>
 		)
 	}

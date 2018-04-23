@@ -21,10 +21,14 @@ class ChatInput extends Component {
 
 	render() {
 		return (
-			<div className="chat-input" >
-				<input type="text" onKeyPress={this.handleSendMessage} />
-				<button onClick={this.switchRecognition} >send</button>
-			</div>
+			<form className="chat-input">
+			  <div class="input-group">
+			    <input type="text" className="form-control" onKeyPress={this.handleSendMessage} />
+			    <div class="input-group-btn">
+			      <button className="btn btn-primary" onClick={this.switchRecognition} >send</button>
+			    </div>
+			  </div>
+			</form>
 		)
 	}
 }
