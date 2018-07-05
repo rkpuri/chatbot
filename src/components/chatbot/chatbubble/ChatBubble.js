@@ -2,16 +2,34 @@ import React, { Component } from 'react'
 import './ChatBubble.css'
 
 class ChatBubble extends Component {
-	
-	render() {
-		return (
-			<div className = {"chat-bubble " + (this.props.isUserResponse?"darker":"")} >
-			  <img src="/w3images/bandmember.jpg" alt="Avatar" className = {this.props.isUserResponse?"right":""} ></img>
-			  <p>{this.props.message}</p>
-			  <span className="time-right">11:00</span>
-			</div>
-		)
-	}
+  
+  constructor(props) {
+    super()
+  }
+
+  getBubbleContent = () => {
+    let content
+    if(this.props.isUserResponse) {
+      content = <div className="message-right">
+                  <img src="/assets/profile-icon.png" alt="User" className="right"></img>
+                  <span>{this.props.message}</span>
+                </div>
+    } else {
+      content = <div>
+                  <img src="/assets/chatbot.png" alt="Chatbot"></img>
+                  <span>{this.props.message}</span>
+                </div>
+    }
+    return content
+  }
+
+  render() {
+    return (
+      <div className = {"chat-bubble " + (this.props.isUserResponse?"darker":"")} >
+        {this.getBubbleContent()}
+      </div>
+    )
+  }
 }
 
 export default ChatBubble

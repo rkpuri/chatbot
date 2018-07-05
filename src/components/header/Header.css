@@ -1,8 +1,9 @@
 .header {
 	background-color: #93ACD9;
-  	height: 52px;
+  	height: 60px;
   	padding: 10px;
   	color: white;
+  	font-size: 20px;
 }
 
 .header .block-1 {

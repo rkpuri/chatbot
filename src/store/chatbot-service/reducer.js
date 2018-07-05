@@ -3,7 +3,7 @@ import * as actions from './action'
 const initialState = {
 	chatBubble: [
 		{
-			response: ["Welcome to easy payment."],
+			response: ["Hi Jack, How can I help you?"],
 			isSentByUser: false
 		}
 	]
