@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../logo/Logo'
-import LabelComponent from '../../lib/LabelComponent'
+import LabelComponent from '../common/label-component/LabelComponent'
 import ProfileIcon from '../profile/ProfileIcon'
 import './Header.css';
 
@@ -12,7 +12,7 @@ class Header extends Component {
         	<Logo className="logo" ></Logo>
         </div>
         <div className="block-2" >
-	        <LabelComponent className="welcome-label" value="Welcome rkpuri" ></LabelComponent>
+	        <LabelComponent className="welcome-label" value="Welcome Jack!" ></LabelComponent>
 	        <ProfileIcon className="profile-icon" ></ProfileIcon>
 	    </div>
       </div>
