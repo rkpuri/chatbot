@@ -4,5 +4,4 @@ Example of Chatbot with ReactJs and dialogflow.com (API.ai)
   - Get key from settings
   - Update key in chatbot-service/saga.js
   
-  - 
 ![alt text](https://github.com/rkpuri/chatbot/blob/master/public/assets/chatbot-screenshot.png)
